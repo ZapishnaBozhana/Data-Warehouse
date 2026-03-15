@@ -1,0 +1,14 @@
+.data {
+  &__wraper {
+    max-height: 560px;
+    padding: 75px 70px;
+    background-color: #fde8f5;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 130px;
+  }
+  &__title {
+    margin-bottom: 40px;
+  }
+}

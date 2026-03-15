@@ -1,0 +1,25 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  padding: 16px 23px;
+  color: #212353;
+  border: 1px solid #9c69e2;
+  border-radius: 50px;
+
+  &__icon {
+    color: #9c69e2;
+    width: 22px;
+    height: 16px;
+  }
+}
+.btn {
+  &:hover {
+    background-color: #9c69e2;
+    color: #ffffff;
+
+    .btn__icon {
+      color: #ffffff;
+    }
+  }
+}

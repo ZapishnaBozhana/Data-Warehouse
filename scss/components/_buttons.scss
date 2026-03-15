@@ -4,18 +4,18 @@
   gap: 20px;
   padding: 16px 23px;
   color: #212353;
-  border: 1px solid #9c69e2;
+  border: 1px solid var(--color-accent-btn);
   border-radius: 50px;
 
   &__icon {
-    color: #9c69e2;
+    color: var(--color-accent-btn);
     width: 22px;
     height: 16px;
   }
 }
 .btn {
   &:hover {
-    background-color: #9c69e2;
+    background-color: var(--color-accent-btn);
     color: #ffffff;
 
     .btn__icon {

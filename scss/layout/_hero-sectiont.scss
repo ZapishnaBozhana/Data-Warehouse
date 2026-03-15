@@ -1,0 +1,28 @@
+.hero {
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+  &__wraper {
+    position: relative;
+  }
+  &__content {
+    max-width: 620px;
+  }
+  &__img {
+    position: absolute;
+    right: -60px;
+    bottom: -80px;
+
+    z-index: -1;
+  }
+  &__title {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 50px;
+  }
+  &__text {
+    margin-bottom: 66px;
+    max-width: 370px;
+  }
+}

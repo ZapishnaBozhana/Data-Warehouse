@@ -31,10 +31,21 @@ address {
 }
 a {
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 li {
   margin: 0;
   padding: 0;
+}
+.text-lg {
+  font-size: 1.125rem;
+}
+.section {
+  padding: 3.75rem;
+}
+.title {
+  color: var(--color-title);
 }
 .container {
   max-width: $container-width;

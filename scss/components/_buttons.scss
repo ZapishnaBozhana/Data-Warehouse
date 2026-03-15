@@ -16,10 +16,21 @@
 .btn {
   &:hover {
     background-color: var(--color-accent-btn);
-    color: #ffffff;
+    color: var(--color-white-btn);
 
     .btn__icon {
-      color: #ffffff;
+      color: var(--color-white-btn);
     }
+  }
+}
+.hero__learn-btn {
+  padding: 16px 52px;
+  color: var(--color-white-btn);
+  border: 1px solid var(--color-accent-btn);
+  background-color: var(--color-accent-btn);
+  border-radius: 50px;
+  &:hover {
+    border: 1px solid var(--color-accent-btn-darker);
+    background-color: var(--color-accent-btn-darker);
   }
 }

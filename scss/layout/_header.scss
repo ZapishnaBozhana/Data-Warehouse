@@ -1,5 +1,6 @@
+/*--mobile--*/
 .header {
-  padding: 20px 0;
+  padding: 16px 0;
   position: sticky;
   top: 0;
   z-index: 3;
@@ -8,24 +9,57 @@
   &__container {
     display: flex;
     align-items: center;
-    gap: 40px;
+    justify-content: space-between;
   }
+
   &__nav {
     display: flex;
     align-items: center;
-    flex-grow: 1;
-    gap: 120px;
   }
+
   &__menu {
-    display: flex;
-    flex-grow: 1;
-    justify-content: flex-start;
-    gap: 40px;
+    display: none;
   }
+
   &__link {
     color: var(--color-text-primery);
+    transition: color 0.3s;
   }
+
   &__link:hover {
     color: var(--color-accent-btn);
+  }
+
+  @include tablet {
+    &__nav {
+      gap: 60px;
+    }
+
+    &__menu {
+      display: flex;
+      gap: 30px;
+    }
+  }
+  @include desktop {
+    padding: 20px 0;
+    top: 0;
+
+    &__container {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+    &__nav {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      gap: 120px;
+    }
+    &__menu {
+      display: flex;
+      flex-grow: 1;
+      justify-content: flex-start;
+      gap: 40px;
+    }
   }
 }

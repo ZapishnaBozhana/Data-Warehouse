@@ -1,29 +1,86 @@
 .hero {
-  padding: 100px 0;
+  padding: 60px 0;
   position: relative;
   overflow: hidden;
-  &__wraper {
-    position: relative;
-  }
-  &__content {
-    max-width: 620px;
-  }
-  &__img {
-    position: absolute;
-    right: -60px;
-    bottom: -80px;
 
-    z-index: -1;
+  &__wraper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__content {
+    max-width: 100%;
   }
   &__title {
     font-family: $title-font-family, sans-serif;
-    font-size: 80px;
-    font-weight: 700;
-    line-height: 1.1;
-    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 24px;
   }
+
   &__text {
-    margin-bottom: 66px;
-    max-width: 370px;
+    margin-bottom: 32px;
+    max-width: 100%;
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+  @include tablet {
+    &__wraper {
+      flex-direction: row;
+      align-items: center;
+      gap: 40px;
+    }
+
+    &__content {
+      max-width: 420px;
+    }
+
+    &__title {
+      font-size: 56px;
+    }
+
+    &__img {
+      max-width: 450px;
+    }
+  }
+  @include desktop {
+    padding: 100px 0;
+
+    &__wraper {
+      position: relative;
+    }
+
+    &__content {
+      max-width: 620px;
+    }
+
+    &__title {
+      font-size: 80px;
+      margin-bottom: 50px;
+    }
+
+    &__text {
+      margin-bottom: 66px;
+      max-width: 370px;
+    }
+
+    &__img {
+      position: absolute;
+      right: 0px;
+      bottom: -80px;
+      max-width: none;
+      width: auto;
+      z-index: -1;
+    }
   }
 }

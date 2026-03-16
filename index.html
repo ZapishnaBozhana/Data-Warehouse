@@ -175,31 +175,51 @@
       </section>
       <section class="testimonials__section section">
         <div class="container">
-          <h2>Testimonials</h2>
-          <article class="testimonials__card">
-            <div class="testimonials__photo"></div>
-            <div class="testimonials__info">
-              <h4>John Fang</h4>
-              <a href="mailto">wordfaang.com</a>
-              <p>
-                Suspendisse ultrices at diam lectus nullam. Nisl, sagittis
-                viverra enim erat tortor ultricies massa turpis. Arcu pulvinar
-                aenean nam laoreet nulla.
-              </p>
+          <div class="testimonials__wraper">
+            <h2 class="testimonials__title title">Testimonials</h2>
+            <div class="testimonials__list">
+              <article class="testimonials-card">
+                <img
+                  class="testimonials-card__photo"
+                  src="./assets/images/john-photo.jpg"
+                  srcset="
+                    ./assets/images/john-photo.jpg    1x,
+                    ./assets/images/john-photo@2x.jpg 2x
+                  "
+                  alt="John Fang"
+                />
+                <div class="testimonials-card__info">
+                  <h4 class="testimonials-card__name">John Fang</h4>
+                  <a href="#" class="testimonials-card__link">wordfaang.com</a>
+                  <p class="testimonials-card__text">
+                    Suspendisse ultrices at diam lectus nullam. <br> Nisl, sagittis
+                    viverra enim erat tortor ultricies massa turpis. Arcu
+                    pulvinar aenean nam laoreet nulla.
+                  </p>
+                </div>
+              </article>
+              <article class="testimonials-card">
+                <img
+                  class="testimonials-card__photo"
+                  src="./assets/images/hanna-photo.jpg"
+                  srcset="
+                    ./assets/images/hanna-photo.jpg    1x,
+                    ./assets/images/hanna-photo@2x.jpg 2x
+                  "
+                  alt="Hanna Wilson"
+                />
+                <div class="testimonials-card__info">
+                  <h4 class="testimonials-card__name">Hanna Wilson</h4>
+                  <a href="#" class="testimonials-card__link">wordfaang.com</a>
+                  <p class="testimonials-card__text">
+                    Suspendisse ultrices at diam lectus nullam. <br> Nisl, sagittis
+                    viverra enim erat tortor ultricies massa turpis. Arcu
+                    pulvinar aenean nam laoreet nulla.
+                  </p>
+                </div>
+              </article>
             </div>
-          </article>
-          <article class="testimonials__card">
-            <div class="testimonials__photo"></div>
-            <div class="testimonials__info">
-              <h4>Hanna Wilson</h4>
-              <a href="mailto">wordfaang.com</a>
-              <p>
-                Suspendisse ultrices at diam lectus nullam. Nisl, sagittis
-                viverra enim erat tortor ultricies massa turpis. Arcu pulvinar
-                aenean nam laoreet nulla.
-              </p>
-            </div>
-          </article>
+          </div>
         </div>
       </section>
     </main>

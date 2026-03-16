@@ -141,6 +141,7 @@ li {
 }
 
 .btn {
+  height: 60px;
   display: inline-flex;
   align-items: center;
   gap: 20px;
@@ -164,7 +165,8 @@ li {
 }
 
 .hero__learn-btn {
-  padding: 16px 52px;
+  font-size: 18px;
+  padding: 18px 52px;
   color: var(--color-white-btn);
   border: 1px solid var(--color-accent-btn);
   background-color: var(--color-accent-btn);
@@ -173,6 +175,17 @@ li {
 .hero__learn-btn:hover {
   border: 1px solid var(--color-accent-btn-darker);
   background-color: var(--color-accent-btn-darker);
+}
+
+.pink {
+  margin-right: 30px;
+  background-color: #f063b8;
+  border: 1px solid #f063b8;
+}
+
+.pink:hover {
+  background-color: #eb4bab;
+  border: 1px solid #eb4bab;
 }
 
 .header {
@@ -371,4 +384,19 @@ li {
 .testimonials-card__text {
   margin-top: 18px;
   font-weight: 400;
+}
+
+.cta__section {
+  padding-bottom: 100px;
+}
+.cta__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cta__title {
+  margin-bottom: 20px;
+}
+.cta__text {
+  margin-bottom: 0;
 }/*# sourceMappingURL=main.css.map */

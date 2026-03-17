@@ -52,7 +52,18 @@ li {
   color: var(--color-title);
 }
 .container {
-  max-width: $container-width;
+  width: 100%;
+  padding: 0 16px;
   margin: 0 auto;
-  padding: 0 1rem;
+
+  @include tablet {
+    .container {
+      max-width: 768px;
+    }
+  }
+  @include tablet {
+    max-width: 1170px;
+    padding: 0 15px;
+  }
 }
+
